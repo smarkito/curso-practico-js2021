@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas de Tendencia Central</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="header">
+      <!-- <img class="header__img-left" src="./assets/simbolos-mat-rojo.png" alt="logo-img-left"> -->
+      <div class="header__text">
+        <h1>3er Taller del Curso Práctico de Javascript</h1>
+        <p>Medidas de tendencia central: Media, Mediana, Moda</p>
+      </div>
+      <img class="header__img-right" src="./assets/simbolo-js.png" alt="logo.img-right">
+    </header>
+    <main class="main">
+      <section class="main__container">
+        <h2>Calculadora de media, mediana y moda</h2>
+        <form class="main__container--form">
+          <label for="inputArray">Escribe una secuencia de números separados por comas</label>
+          <input type="texto" id="input_text" placeholder="Ejemplo:     1, 2, 3, 20, 50, 90, 100">
+          <div class="result-container">
+            <button type="button" onclick="meanCalculator()">Calcular Promedio</button>
+            <p id="resultMean"></p>
+          </div>
+          <div class="result-container">
+            <button type="button" onclick="medianCalculator()">Calcular Mediana</button>
+            <p id="resultMedian"></p>
+          </div>
+          <div class="result-container">
+            <button type="button" onclick="modeCalculator()">Calcular Moda</button>
+            <p id="resultMode"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h4>Hecho con 💚 desde MX por smark_dev</h4>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

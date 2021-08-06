@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas | Curso Práctico de JS 2021</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./figuras.css">
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__img" src="./assets/logo-math.png" alt="logo">
+      <div class="header__title">
+        <h1>Figuras Geométricas</h1>
+        <p>1er taller del curso práctico de Javascript</p>
+      </div>
+    </header>
+    <main class="calculator">
+      <div class="calculator__squareContainer">
+        <h2>Calcula el perímetro y el área de un cuadrado</h2>
+        <form class="calculator__squareContainer--form">
+          <label for="InputCuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label>
+          <input class="calculator__squareContainer--input" type="number" id="InputCuadrado" placeholder="Escribe un número">
+          <button class="calculator__squareContainer--button" type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+          <button class="calculator__squareContainer--button" type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+        </form>
+      </div>
+
+      <div class="calculator__triangleContainer">
+        <h2>Calcula la altura y el área de un triángulo isósceles</h2>
+        <form class="calculator__triangleContainer--form">
+          <label for="InputLado1">Cuánto mide el lado 1:</label>
+          <input class="calculator__triangleContainer--input" type="number" id="InputLado1" placeholder="lado 1">
+          <label for="InputLado2">Cuánto mide el lado 2:</label>
+          <input class="calculator__triangleContainer--input" type="number" id="InputLado2" placeholder="lado 2">
+          <label for="InputBase">Cuánto mide la base:</label>
+          <input class="calculator__triangleContainer--input" type="number" id="InputBase" placeholder="base">
+          <button class="calculator__triangleContainer--button" type="button" onclick="calcularAlturaTriangulo()">Calcular altura</button>
+          <button class="calculator__triangleContainer--button" type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+        </form>
+      </div>
+
+      <div class="calculator__circleContainer">
+        <h2>Calcula la circunferencia, diámetro y área de un circulo</h2>
+        <form class="calculator__circleContainer--form">
+          <label for="InputRadio">Escribe cuánto mide el radio del círculo:</label>
+          <input class="calculator__circleContainer--input" type="number" id="InputRadio" placeholder="Radio del círculo">
+          <button class="calculator__circleContainer--button" type="button" onclick="calcularDiametroCirculo()">Calcular diámetro</button>
+          <button class="calculator__circleContainer--button" type="button" onclick="calcularCircunferenciaCirculo()">Calcular circunferencia</button>
+          <button class="calculator__circleContainer--button" type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+        </form>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <img src="./assets/twitter-icon.png" alt="">
+      <a href="https://twitter.com/smark_dev">Sígueme en Twitter</a>
+    </footer>
+    <script src="./figuras.js"></script>
+  </body>
+</html>
